@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
-let baseDir = path.join(__dirname, "/./models/");
+let repoRoot = path.dirname(require.main.filename);
+let baseDir = path.join(repoRoot, "/./models/");
 
 createDir = (model = [{}], modelName = "Model.js") => {
   fs.promises
