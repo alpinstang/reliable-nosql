@@ -25,5 +25,5 @@ createFile = (model, modelName) => {
 };
 
 writeModel = (model, modelName) => {
-  createDir(model, modelName);
+  return createDir(model, modelName);
 };

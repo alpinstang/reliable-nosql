@@ -1,0 +1,1 @@
+[{"k":"name","t":"string"},{"k":"age","t":"number"},{"k":"favorites","t":"object"},{"k":"chilren","t":"object"},{"k":"isAlive","t":"boolean"}]

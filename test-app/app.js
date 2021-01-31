@@ -1,7 +1,17 @@
 rn = require("reliable-nosql");
 
-var s = { name: "raul", age: "22", gender: "Male" };
+var s = {
+  name: "Raul",
+  age: 22,
+  favorites: ["food", "farts", "flubber"],
+  chilren: [
+    { name: "Billy", age: 13 },
+    { name: "Mandy", age: 15 },
+  ],
+  isAlive: true,
+};
 
-const res = rn.addModel(s);
+const name = "RaulModel";
+const res = rn.addModel(s, name);
 
 console.log(res);
